@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#para").hover(function () {
+                $(this).animate({ fontSize: '3em' }, "slow");
+            },
+                function () {
+                    $(this).hide();
+                });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>jQuery hover event example</h2>
+    <p id="para">This example is published on beginnersbook.com.</p>
+
+    <p>When the mouse pointer enters the first paragraph, the font size of the
+        paragraph will be increased but when mouse pointer leaves the paragraph,
+        the paragraph will be hidden.</p>
+</body>
+
+</html>

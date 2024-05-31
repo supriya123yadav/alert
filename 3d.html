@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("input").keydown(function(){
+    $("input").css("background-color", "green");
+  });
+  $("input").keyup(function(){
+    $("input").css("background-color", "yellow");
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>jQuery keyup event example on Beginnersbook.com</h2>
+Write anything here: <input type = "text">
+<p>The background color of input text field will change to green, when you
+press a key inside the input field and the color will change to yellow when you release the key inside the input text field.</p>
+</body>
+</html>

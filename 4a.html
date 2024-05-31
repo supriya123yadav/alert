@@ -1,0 +1,37 @@
+<!-- jQuery mouseenter() Method Syntax
+$(selector).mouseenter(function(){
+    //mouse enter event handler function code. This code 
+    //executes when mouse enters the selected html elements
+});
+Here $(selector) is a jQuery selector that selects the html elements and the mouseenter() method attaches the mouse enter event handler function to these selected elements. This makes this event to trigger when the mouse pointer enters on these selected html elements.
+
+jQuery mouseenter() Example
+In the following example we have two paragraphs but we want the mouseenter event to trigger only for the second paragraph so we have assigned an id to the second paragraph and we have attached the mouseenter event handler function to the id selector that has the second paragraph id. Which means the event will only trigger when mouse pointer enters over the second paragraph.
+
+In the event handler function we are hiding the selected element using slideUp() method which makes the selected element to gradually disappear with a slide up effect -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#para").mouseenter(function () {
+                $(this).slideUp();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h2>jQuery mouseenter event example</h2>
+    <p>This example is published on beginnersbook.com.</p>
+    <p id="para">This paragraph will be hidden with a slideup effect when
+        mouse pointer enters on this paragraph.</p>
+    <button>Button</button>
+</body>
+
+</html>
